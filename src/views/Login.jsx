@@ -2,6 +2,7 @@ import React from "react";
 
 import Navbar from "../components/Navbar.jsx";
 import FooterSmall from "../components/FooterSmall.jsx";
+import common from "../util/common.js";
 
 export default function Login() {  
 
