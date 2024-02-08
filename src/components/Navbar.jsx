@@ -19,9 +19,9 @@ export default function Navbar(props) {
                 (props.transparent ? "text-white" : "text-gray-800") +
                 " text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase"
               }
-              href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/presentation"
+              href="/"
             >
-              Tailwind Starter Kit
+              FOODIMINDER
             </a>
             <button
               className="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
@@ -42,30 +42,7 @@ export default function Navbar(props) {
               (navbarOpen ? " block rounded shadow-lg" : " hidden")
             }
             id="example-navbar-warning"
-          >
-            <ul className="flex flex-col lg:flex-row list-none mr-auto">
-              <li className="flex items-center">
-                <a
-                  className={
-                    (props.transparent
-                      ? "lg:text-white lg:hover:text-gray-300 text-gray-800"
-                      : "text-gray-800 hover:text-gray-600") +
-                    " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                  }
-                  href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/login"
-                >
-                  <i
-                    className={
-                      (props.transparent
-                        ? "lg:text-gray-300 text-gray-500"
-                        : "text-gray-500") +
-                      " far fa-file-alt text-lg leading-lg mr-2"
-                    }
-                  />{" "}
-                  Docs
-                </a>
-              </li>
-            </ul>
+          >            
             <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
               <li className="flex items-center">
                 <a
@@ -75,16 +52,8 @@ export default function Navbar(props) {
                       : "text-gray-800 hover:text-gray-600") +
                     " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                   }
-                  href="#pablo"
-                >
-                  <i
-                    className={
-                      (props.transparent
-                        ? "lg:text-gray-300 text-gray-500"
-                        : "text-gray-500") +
-                      " fab fa-facebook text-lg leading-lg "
-                    }
-                  />
+                  href="/"
+                > CONTACT US
                   <span className="lg:hidden inline-block ml-2">Share</span>
                 </a>
               </li>
@@ -97,16 +66,8 @@ export default function Navbar(props) {
                       : "text-gray-800 hover:text-gray-600") +
                     " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                   }
-                  href="#pablo"
-                >
-                  <i
-                    className={
-                      (props.transparent
-                        ? "lg:text-gray-300 text-gray-500"
-                        : "text-gray-500") +
-                      " fab fa-twitter text-lg leading-lg "
-                    }
-                  />
+                  href="/"
+                > DJKIM'S GITHUB
                   <span className="lg:hidden inline-block ml-2">Tweet</span>
                 </a>
               </li>
@@ -119,20 +80,13 @@ export default function Navbar(props) {
                       : "text-gray-800 hover:text-gray-600") +
                     " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                   }
-                  href="#pablo"
-                >
-                  <i
-                    className={
-                      (props.transparent
-                        ? "lg:text-gray-300 text-gray-500"
-                        : "text-gray-500") +
-                      " fab fa-github text-lg leading-lg "
-                    }
-                  />
+                  href="/"
+                > SHSON'S GITHUB
                   <span className="lg:hidden inline-block ml-2">Star</span>
                 </a>
               </li>
 
+              {/* 다운로드 버튼
               <li className="flex items-center">
                 <button
                   className={
@@ -146,7 +100,8 @@ export default function Navbar(props) {
                 >
                   <i className="fas fa-arrow-alt-circle-down"></i> Download
                 </button>
-              </li>
+              </li> */}
+              
             </ul>
           </div>
         </div>
