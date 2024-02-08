@@ -10,7 +10,7 @@ axios.interceptors.response.use(
     }
   );
 
-  const Api = axios.create({
+const Api = axios.create({
     baseURL: "http://localhost:8080",
     timeout: "60000", // 1분
     headers: {
