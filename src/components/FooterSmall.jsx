@@ -20,7 +20,7 @@ export default function FooterSmall(props) {
                   href="https://www.creative-tim.com"
                   className="text-white hover:text-gray-400 text-sm font-semibold py-1"
                 >
-                  Creative Tim
+                  Kim & Son
                 </a>
               </div>
             </div>
@@ -31,33 +31,9 @@ export default function FooterSmall(props) {
                     href="https://www.creative-tim.com"
                     className="text-white hover:text-gray-400 text-sm font-semibold block py-1 px-3"
                   >
-                    Creative Tim
+                    Expiration Date Management System
                   </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.creative-tim.com/presentation"
-                    className="text-white hover:text-gray-400 text-sm font-semibold block py-1 px-3"
-                  >
-                    About Us
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="http://blog.creative-tim.com"
-                    className="text-white hover:text-gray-400 text-sm font-semibold block py-1 px-3"
-                  >
-                    Blog
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://github.com/creativetimofficial/argon-design-system/blob/master/LICENSE.md"
-                    className="text-white hover:text-gray-400 text-sm font-semibold block py-1 px-3"
-                  >
-                    MIT License
-                  </a>
-                </li>
+                </li>                
               </ul>
             </div>
           </div>
