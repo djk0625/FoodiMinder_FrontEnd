@@ -7,8 +7,8 @@ import common from "../util/CommonF.js"
 export default function Login() {  
 
   const [input, setInput] = React.useState({
-    id: '',
-    password: ''
+    userId: '',
+    userPass: ''
   })
 
   const handleSignInClick = () => {
@@ -33,15 +33,15 @@ export default function Login() {
 
   const handleInputChange = (e) => {
     switch(e.target.id) {
-      case "id":
+      case "userId":
         setInput((prev) => {
-          return {...prev, id: e.target.value}
+          return {...prev, userId: e.target.value}
         });
         break;
 
-      case "password":
+      case "userPass":
         setInput((prev) => {
-          return {...prev, password: e.target.value}
+          return {...prev, userPass: e.target.value}
         });
         break;
 
@@ -114,9 +114,9 @@ export default function Login() {
                           ID
                         </label>
                         <input
-                          id = "id"
+                          id = "userId"
                           type="text"
-                          value={input.id}
+                          value={input.userId}
                           className="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
                           placeholder="id"
                           style={{ transition: "all .15s ease" }}
@@ -132,9 +132,9 @@ export default function Login() {
                           Password
                         </label>
                         <input
-                          id="password"
+                          id="userPass"
                           type="password"
-                          value={input.password}
+                          value={input.userPass}
                           className="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
                           placeholder="Password"
                           style={{ transition: "all .15s ease" }}
@@ -162,7 +162,7 @@ export default function Login() {
                           style={{ transition: "all .15s ease" }}
                           onClick={handleSignInClick}
                         >
-                          Sign In
+                          로그인
                         </button>
                       </div>
                       <div className="text-center mt-6">
@@ -172,7 +172,7 @@ export default function Login() {
                           style={{ transition: "all .15s ease" }}
                           onClick={handleSignUpClick}
                         >
-                          Sign Up
+                          회원가입
                         </button>
                       </div>
                       <div className="text-center mt-6">
@@ -186,26 +186,6 @@ export default function Login() {
                         </button>
                       </div>
                     </form>
-                  </div>
-                </div>
-                <div className="flex flex-wrap mt-6">
-                  <div className="w-1/2">
-                    <a
-                      href="#pablo"
-                      onClick={e => e.preventDefault()}
-                      className="text-gray-300"
-                    >
-                      <small>Forgot password?</small>
-                    </a>
-                  </div>
-                  <div className="w-1/2 text-right">
-                    <a
-                      href="#pablo"
-                      onClick={e => e.preventDefault()}
-                      className="text-gray-300"
-                    >
-                      <small>Create new account</small>
-                    </a>
                   </div>
                 </div>
               </div>
