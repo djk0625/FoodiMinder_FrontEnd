@@ -4,8 +4,13 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'main': "url('../assets/img/register_bg_2.png')",
+      },
+    },    
   },
   plugins: [],
+  darkMode: 'class',
 }
 
