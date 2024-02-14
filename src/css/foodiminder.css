@@ -5,3 +5,7 @@
 body {
 	@apply text-black font-sans dark:text-white
 }
+
+.ml-26 {
+	margin-left: 104px
+}
