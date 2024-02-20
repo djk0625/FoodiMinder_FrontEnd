@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from 'react-router-dom';
 
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -12,9 +13,11 @@ export default function Login() {
     userId: '',
     userPass: ''
   })
+
+  const navigate = useNavigate();
   
   const handleClickDarkMode = () => {
-    document.documentElement.classList.toggle('dark')
+    document.documentElement.classList.toggle("dark")
   }
 
   const handleClickGoogle = () => {
@@ -27,10 +30,6 @@ export default function Login() {
 
   const handleClickSignIn = () => {
     alert("로그인 버튼입니다.");
-  }
-
-  const handleClickSignUp = () => {
-    alert("회원가입 버튼입니다.");
   }
 
   return (
@@ -82,7 +81,7 @@ export default function Login() {
                 <button className="bg-slate-600 text-white font-extrabold rounded-md shadow-md w-3/4 h-9" onClick={handleClickSignIn}>로그인</button>
               </div>
               <div className="w-3/4 mt-3 text-left ml-26">
-                <button className="bg-slate-600 text-white font-extrabold rounded-md shadow-md w-3/4 h-9" onClick={handleClickSignUp}>회원가입</button>
+                <button className="bg-slate-600 text-white font-extrabold rounded-md shadow-md w-3/4 h-9" onClick={() => navigate('SignUp')}>회원가입</button>
               </div>
             </div>            
           </div>
