@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Navbar () {
   return(
@@ -6,7 +7,7 @@ export default function Navbar () {
       <nav>
         <div className="absolute flex h-20 w-screen text-white bg-black font-extrabold text-base items-center">
           <div className="flex-1 pl-40">
-            <a href="/">FOODIMINDER</a>
+            <Link to="/">FOODIMINDER</Link>
           </div>
           <div className="flex-1 pr-40">          
             <ul className="flex pl-64 text-right">
