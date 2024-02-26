@@ -35,7 +35,7 @@ export default function Login() {
   return (
     <>
       <Navbar />
-        <div className="flex justify-center text-center items-center bg-main h-screen w-screen bg-cover bg-white dark:bg-slate-800">
+        <div className="flex justify-center text-center items-center bg-main h-screen w-screen bg-cover dark:bg-main-dark">
             {/* <button className="bg-slate-500" onClick={handleClickDarkMode}>
               black
             </button> */}
@@ -78,7 +78,7 @@ export default function Login() {
               </div>
 
               <div className="w-3/4 mt-11 text-left ml-26">
-                <button className="bg-slate-600 text-white font-extrabold rounded-md shadow-md w-3/4 h-9" onClick={handleClickSignIn}>로그인</button>
+                <button className="bg-slate-600 text-white font-extrabold rounded-md shadow-md w-3/4 h-9" onClick={handleClickDarkMode}>로그인</button>
               </div>
               <div className="w-3/4 mt-3 text-left ml-26">
                 <button className="bg-slate-600 text-white font-extrabold rounded-md shadow-md w-3/4 h-9" onClick={() => navigate('SignUp')}>회원가입</button>

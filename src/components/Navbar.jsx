@@ -5,7 +5,7 @@ export default function Navbar () {
   return(
     <>
       <nav>
-        <div className="absolute flex h-20 w-screen text-white bg-black font-extrabold text-base items-center">
+        <div className="absolute flex h-20 w-screen text-white bg-blue-300 font-extrabold text-base items-center">
           <div className="flex-1 pl-40">
             <Link to="/">FOODIMINDER</Link>
           </div>
