@@ -6,7 +6,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'main': "url('../assets/img/register_bg_2.png')",
+        'main': "url('../assets/img/bg.png')",
+        'main-dark': "url('../assets/img/bg_dark.png')",
       },
     },    
   },

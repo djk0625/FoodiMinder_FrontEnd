@@ -1,4 +1,5 @@
 import React from "react";
+import axios from "axios";
 
 import common from "../util/Common";
 import Navbar from "../components/Navbar";
@@ -15,10 +16,13 @@ export default function SignUp() {
     userPhone: "",
   })
 
-  const handleClickDuplChk = () => {
-    alert("중복체크 API 호출 예정");
-    // 중복체크 success => 사용가능팝업 띄우고 확인누르면 readonly, duplChk값 true로
-    
+  const handleClickDuplChk = async () => {
+    // 이거 따로 모아서 분리하고 요청 타임아웃 등 에러 처리하는거 만드는거처럼 만들어야됨
+    // 개발자도구 확인
+    const result = await axios.post("/api/user/idDuplChk",{
+      userId: "admin"
+    },     
+    ).then(response => {console.log(response);})
   }
 
   const handleChangePhone = (e) => {
