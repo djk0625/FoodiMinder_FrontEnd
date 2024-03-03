@@ -1,7 +1,7 @@
 import React from "react";
-import axios from "axios";
 
 import common from "../util/Common";
+import loginApi from "../api/LoginApi";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
@@ -17,12 +17,26 @@ export default function SignUp() {
   })
 
   const handleClickDuplChk = async () => {
-    // 이거 따로 모아서 분리하고 요청 타임아웃 등 에러 처리하는거 만드는거처럼 만들어야됨
-    // 개발자도구 확인
-    const result = await axios.post("/api/user/idDuplChk",{
-      userId: "admin"
-    },     
-    ).then(response => {console.log(response);})
+    if(common.checkNull(input.userId)) {
+      alert("아이디를 입력해주세요.");
+    } else {
+      // TODO :: axios 커스텀 만들어야되고 에외처리해야됨
+      // TODO :: api 호출 시 로딩창 구현
+      const param = {userId: input.userId};
+      console.log("idDuplChk Param :: ", param);
+      const res = await loginApi.idDuplChk(param);
+      console.log("idDuplChk Result :: ", res);
+      if (res.resultCode === 1) {
+        if (res.resultData) {
+          alert("사용가능한 아이디입니다.");
+          // TODO :: ID input readonly 처리
+        } else {
+          alert("이미 존재하는 아이디입니다.");
+        }
+      } else {
+        alert("API 호출 오류 발생");
+      }
+    }
   }
 
   const handleChangePhone = (e) => {

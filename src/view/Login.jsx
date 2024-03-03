@@ -25,7 +25,7 @@ export default function Login() {
   }
 
   const handleClickKakao = () => {
-    alert("카카오 가입, 로그인 버튼입니다.");
+    window.open("https://kauth.kakao.com/oauth/authorize?client_id=5d6866579ca70b4f2ea3e7dd9ab419d7&redirect_uri=http://localhost:8080/api/user/kakao/getAuthCode&response_type=code");
   }
 
   const handleClickSignIn = () => {
